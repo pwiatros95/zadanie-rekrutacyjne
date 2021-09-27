@@ -19,28 +19,56 @@
 
     <div style="background-image: url('https://unsplash.com/photos/E0AHdsENmDg');"></div>
 
-    <form action="" method="POST" id="form">
-        
-        <label for="name">Imię:</label>
-        <input type="text" required name="name" id="name" data-text-error="Wpisz poprawne imię">
+    <!-- <ul id="errors"></ul>
 
-        <br>
-        <label for="lastname">Nazwisko:</label>
-        <input type="text" required name="lastname" id="lastname" data-text-error="Wpisz poprawne nazwisko">
+    <form action="" method="POST" id="newsletter-form">
 
+        <ul id="errors"></ul>
+    
+        <p class="par1">Witaj! </p>
+        <p calss="par2">Wypełnij formularz i zgarnij kod rabatowy do wykorzystania przy najbliższysch zakupach</p>
         <br>
         <label for="mail">E-mail:</label>
-        <input type="email" required name="email" id="email" data-text-error="Wpisz poprawne email">
+        <input type="email" name="email" id="email">
 
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
+        
         <br>
-        <label for="message">Wiadomość: </label>
-        <textarea name="message" id="message"></textarea>
-        <br>
-        <input type="checkbox" id="agreement" name="agreement" title="Zatwierdzenie zgody jest obowiązkowe!">
-        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
-        <br>
-        <input type="submit" value="Wyślij">
+        <input type="checkbox" id="agree" name="agree" title="Zatwierdzenie zgody jest">
+        <label for="agree">Wyrażam zgodę na przetwarzanie danych osobowych</label> -->
+        <!-- <br>
+        <button type="submit" id="sing-up">Wyślij</button> -->
+        
     </form>
+
+    <div class="container">
+        <form action="" method="post" id="signup">
+            <h1>Witaj!</h1>
+            <p calss="par">Wypełnij formularz i zgarnij <span class="aa">kod rabatowy</span> do wykorzystania przy najbliższysch zakupach</p>
+           
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"/>
+                <small></small>
+            </div>
+           
+            <div class="field">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name"/>
+                <small></small>
+            </div>
+
+            <div class="field">
+            <input type="checkbox" id="agree" name="agree" title="Zatwierdzenie zgody jest">
+            <label for="agree">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+            </div>
+
+            <div class="field">
+                <button type="submit" class="full">Wyślij!</button>
+            </div>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 
